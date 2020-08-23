@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BeOpen.iiko.Back.Temperature.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GetTemperatureUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://server.serviceinspector.ru/api/0/inspector/get_temperature_report?org_id=c0bcedb6-99d0-425f-a37f-34013d0c8cfd&amp;template_id=600e3215-7e21-4df3-8434-0e0b62b6bf09&amp;token=pTw0gyoVT_xtTV3LVZnaGBCKskNtadEI6Pie-IA1Bj4</Value>
+    </Setting>
+    <Setting Name="StoreId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">6ac394d9-ab89-45bc-b617-74cf35dcfe36</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
