@@ -55,9 +55,7 @@ namespace BeOpen.iiko.Back.Temperature.Model
                 result.Add(new TemperatureModel
                 {
                     StoreName = elem?.StoreName,
-                    MinTemp = $"{elem?.TemperatureInfo.EmployeeNameMinTemp} - {elem?.TemperatureInfo.MinTemp}",
                     AvarageTemp = $"{elem?.TemperatureInfo.AverageTemp}",
-                    MaxTemp = $"{elem?.TemperatureInfo.EmployeeNameMaxTemp} - {elem?.TemperatureInfo.MaxTemp}",
                 });
             }
 

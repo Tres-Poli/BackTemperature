@@ -43,14 +43,10 @@ namespace BeOpen.iiko.Back.Temperature.View
         private void FillAndRefreshTable(TemperatureModel data)
         {
             lblStoreNameVal.Text = data.StoreName;
-            lblMinTempVal.Text = data.MinTemp;
             lblAvrgTempVal.Text = data.AvarageTemp;
-            lblMaxTempVal.Text = data.MaxTemp;
 
             lblStoreNameVal.Refresh();
-            lblMinTempVal.Refresh();
             lblAvrgTempVal.Refresh();
-            lblMaxTempVal.Refresh();
         }
     }
 }

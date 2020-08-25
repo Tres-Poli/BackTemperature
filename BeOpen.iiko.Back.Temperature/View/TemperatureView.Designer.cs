@@ -34,12 +34,8 @@ namespace BeOpen.iiko.Back.Temperature.View
             this.cmboBoxStores = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStoreName = new System.Windows.Forms.Label();
-            this.lblMaxTemp = new System.Windows.Forms.Label();
             this.lblAvrgTemp = new System.Windows.Forms.Label();
-            this.lblMinTemp = new System.Windows.Forms.Label();
-            this.lblMinTempVal = new System.Windows.Forms.Label();
             this.lblAvrgTempVal = new System.Windows.Forms.Label();
-            this.lblMaxTempVal = new System.Windows.Forms.Label();
             this.lblStoreNameVal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -54,12 +50,12 @@ namespace BeOpen.iiko.Back.Temperature.View
             // 
             // cmboBoxStores
             // 
+            this.cmboBoxStores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmboBoxStores.FormattingEnabled = true;
             this.cmboBoxStores.Location = new System.Drawing.Point(45, 39);
             this.cmboBoxStores.Name = "cmboBoxStores";
             this.cmboBoxStores.Size = new System.Drawing.Size(121, 21);
             this.cmboBoxStores.TabIndex = 1;
-            this.cmboBoxStores.DropDownStyle = ComboBoxStyle.DropDownList;
             // 
             // statusStrip1
             // 
@@ -78,64 +74,26 @@ namespace BeOpen.iiko.Back.Temperature.View
             this.lblStoreName.TabIndex = 4;
             this.lblStoreName.Text = "Store name";
             // 
-            // lblMaxTemp
-            // 
-            this.lblMaxTemp.AutoSize = true;
-            this.lblMaxTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaxTemp.Location = new System.Drawing.Point(42, 212);
-            this.lblMaxTemp.Name = "lblMaxTemp";
-            this.lblMaxTemp.Size = new System.Drawing.Size(101, 13);
-            this.lblMaxTemp.TabIndex = 5;
-            this.lblMaxTemp.Text = "Max temperature";
-            // 
             // lblAvrgTemp
             // 
             this.lblAvrgTemp.AutoSize = true;
             this.lblAvrgTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvrgTemp.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblAvrgTemp.Location = new System.Drawing.Point(42, 169);
+            this.lblAvrgTemp.Location = new System.Drawing.Point(42, 135);
             this.lblAvrgTemp.Name = "lblAvrgTemp";
             this.lblAvrgTemp.Size = new System.Drawing.Size(125, 13);
             this.lblAvrgTemp.TabIndex = 6;
             this.lblAvrgTemp.Text = "Avarage temperature";
-            // 
-            // lblMinTemp
-            // 
-            this.lblMinTemp.AutoSize = true;
-            this.lblMinTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinTemp.Location = new System.Drawing.Point(42, 130);
-            this.lblMinTemp.Name = "lblMinTemp";
-            this.lblMinTemp.Size = new System.Drawing.Size(98, 13);
-            this.lblMinTemp.TabIndex = 7;
-            this.lblMinTemp.Text = "Min temperature";
-            // 
-            // lblMinTempVal
-            // 
-            this.lblMinTempVal.AutoSize = true;
-            this.lblMinTempVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinTempVal.Location = new System.Drawing.Point(215, 130);
-            this.lblMinTempVal.Name = "lblMinTempVal";
-            this.lblMinTempVal.Size = new System.Drawing.Size(0, 13);
-            this.lblMinTempVal.TabIndex = 11;
             // 
             // lblAvrgTempVal
             // 
             this.lblAvrgTempVal.AutoSize = true;
             this.lblAvrgTempVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvrgTempVal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblAvrgTempVal.Location = new System.Drawing.Point(215, 169);
+            this.lblAvrgTempVal.Location = new System.Drawing.Point(215, 135);
             this.lblAvrgTempVal.Name = "lblAvrgTempVal";
             this.lblAvrgTempVal.Size = new System.Drawing.Size(0, 13);
             this.lblAvrgTempVal.TabIndex = 10;
-            // 
-            // lblMaxTempVal
-            // 
-            this.lblMaxTempVal.AutoSize = true;
-            this.lblMaxTempVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaxTempVal.Location = new System.Drawing.Point(215, 212);
-            this.lblMaxTempVal.Name = "lblMaxTempVal";
-            this.lblMaxTempVal.Size = new System.Drawing.Size(0, 13);
-            this.lblMaxTempVal.TabIndex = 9;
             // 
             // lblStoreNameVal
             // 
@@ -150,13 +108,9 @@ namespace BeOpen.iiko.Back.Temperature.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblMinTempVal);
             this.Controls.Add(this.lblAvrgTempVal);
-            this.Controls.Add(this.lblMaxTempVal);
             this.Controls.Add(this.lblStoreNameVal);
-            this.Controls.Add(this.lblMinTemp);
             this.Controls.Add(this.lblAvrgTemp);
-            this.Controls.Add(this.lblMaxTemp);
             this.Controls.Add(this.lblStoreName);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.cmboBoxStores);
@@ -174,12 +128,8 @@ namespace BeOpen.iiko.Back.Temperature.View
         private System.Windows.Forms.ComboBox cmboBoxStores;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Label lblStoreName;
-        private System.Windows.Forms.Label lblMaxTemp;
         private System.Windows.Forms.Label lblAvrgTemp;
-        private System.Windows.Forms.Label lblMinTemp;
-        private System.Windows.Forms.Label lblMinTempVal;
         private System.Windows.Forms.Label lblAvrgTempVal;
-        private System.Windows.Forms.Label lblMaxTempVal;
         private System.Windows.Forms.Label lblStoreNameVal;
     }
 }
